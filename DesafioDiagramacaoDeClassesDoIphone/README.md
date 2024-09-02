@@ -2,9 +2,9 @@
 
 ### Modelagem e Diagramação de um Componente iPhone
 
-Neste desafio, você será responsável por modelar e diagramar a representação UML do componente iPhone, abrangendo suas funcionalidades como Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
+Desafio Diagramação de um Componente iPhone
 
-### Diagrama UML (Mermaid)
+### Diagrama UML
 ```mermaid
 classDiagram
     class ReprodutorMusical {
@@ -25,10 +25,27 @@ classDiagram
         +atualizarPagina()
     }
 
-    class iPhone {
+    class FuncionalidadesMultiFuncional {
+        + tocar()
+        + pausar()
+        + selecionarMusica(musica: String)
+        + exibirPagina(url: String)   
+        + adicionarNovaAba()   
+        + atualizarPagina()    
+        + ligar(numero: int)    
+        + atender()      
+        + iniciarCorreioVoz()
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    class iPhone {
+        Inherits: FuncionalidadesMultiFuncional
+    }
+
+    iphone --> FuncionalidadesMultiFuncional
+    FuncionalidadesMultiFuncional --> ReprodutorMusical
+    FuncionalidadesMultiFuncional --> AparelhoTelefonico
+    FuncionalidadesMultiFuncional --> NavegadorInternet
 ```
+
+FuncionalidadesMultiFuncional implementa todas as interfaces (AparelhoTelefonico, NavegadorInternet, e ReprodutorMusical).
+Iphone estende FuncionalidadesMultiFuncional, herdando suas funcionalidades.
