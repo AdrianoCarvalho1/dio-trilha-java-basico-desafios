@@ -47,5 +47,5 @@ classDiagram
     MultiFuncional --> NavegadorInternet
 ```
 
-FuncionalidadesMultiFuncional implementa todas as interfaces (AparelhoTelefonico, NavegadorInternet, e ReprodutorMusical).
-Iphone estende FuncionalidadesMultiFuncional, herdando suas funcionalidades.
+MultiFuncional implementa todas as interfaces (AparelhoTelefonico, NavegadorInternet, e ReprodutorMusical).
+Iphone estende MultiFuncional, herdando suas funcionalidades.
