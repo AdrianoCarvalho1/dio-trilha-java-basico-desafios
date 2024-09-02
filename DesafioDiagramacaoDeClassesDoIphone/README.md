@@ -41,7 +41,7 @@ classDiagram
         Inherits: FuncionalidadesMultiFuncional
     }
 
-    iphone --> FuncionalidadesMultiFuncional
+    iPhone --> FuncionalidadesMultiFuncional
     FuncionalidadesMultiFuncional --> ReprodutorMusical
     FuncionalidadesMultiFuncional --> AparelhoTelefonico
     FuncionalidadesMultiFuncional --> NavegadorInternet
