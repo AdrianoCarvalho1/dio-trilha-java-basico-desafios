@@ -25,7 +25,7 @@ classDiagram
         +atualizarPagina()
     }
 
-    class FuncionalidadesMultiFuncional {
+    class MultiFuncional {
         + tocar()
         + pausar()
         + selecionarMusica(musica: String)
@@ -38,14 +38,14 @@ classDiagram
     }
 
     class iPhone {
-        Inherits: FuncionalidadesMultiFuncional
+        Inherits: MultiFuncional
     }
 
-    iphone --> FuncionalidadesMultiFuncional
-    FuncionalidadesMultiFuncional --> ReprodutorMusical
-    FuncionalidadesMultiFuncional --> AparelhoTelefonico
-    FuncionalidadesMultiFuncional --> NavegadorInternet
+    iPhone --> MultiFuncional
+    MultiFuncional --> ReprodutorMusical
+    MultiFuncional --> AparelhoTelefonico
+    MultiFuncional --> NavegadorInternet
 ```
 
-FuncionalidadesMultiFuncional implementa todas as interfaces (AparelhoTelefonico, NavegadorInternet, e ReprodutorMusical).
-Iphone estende FuncionalidadesMultiFuncional, herdando suas funcionalidades.
+MultiFuncional implementa todas as interfaces (AparelhoTelefonico, NavegadorInternet, e ReprodutorMusical).
+Iphone estende MultiFuncional, herdando suas funcionalidades.
