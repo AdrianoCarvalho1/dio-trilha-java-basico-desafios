@@ -67,9 +67,7 @@ public abstract class Conta implements IConta {
 				depositar(rendimento);
 				System.out.println(String.format("Rendimento em %d ano(s): %.2f", anos, rendimento));
 			}
-		}
-
-		if (conta == "Corrente") {
+		} else if (conta == "Corrente") {
 			double saldoOriginal = saldo;
 			for (int anos = 1; anos <= 5; anos++) {
 				double rendimento = saldoOriginal * Math.pow(1 + TAXA_SELIC_ANUAL, anos);

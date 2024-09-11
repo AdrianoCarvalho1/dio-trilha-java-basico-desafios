@@ -14,6 +14,7 @@ public class Main {
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
 		poupanca.imprimirExtratosRendimentos();
+		cc.imprimirExtratosRendimentos();
 	}
 
 }
